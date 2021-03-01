@@ -13,7 +13,7 @@ body{
     padding: 100px;
 }
 .menu{
-    padding: 50px;
+    padding: 20px;
     
 }
 .card{
@@ -21,27 +21,16 @@ body{
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 6fr 10fr;
-    font-size: 24px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
-    padding: 2em;
+    padding: 20px;
     box-shadow: 5px 10px 5px 0px rgba(230,230,230,0.76);
-    margin: 5px;
+  
     margin: 50px;
     
 }
-#darkMode{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    padding: 10px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    background-color: f6f6f6;
-}
+
 a{
     text-decoration: none;
 }
@@ -49,4 +38,12 @@ a{
     color: white;
     border-radius: 5px;
     padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
 }
