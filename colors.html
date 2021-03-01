@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Random Color Generator</title>
+        <link rel="stylesheet" href="css/colors.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <span class=" material-icons navbar-toggle" id="navbar-toggle"> menu </span>    
+            <a href="index.html" class="logo"> Color Tools </a>
+            <ul class="main-nav" id="menu">
+                <li><a href="gradient.html" class="nav-link">Gradient</a></li>
+                <li><a href="colors.html" class="nav-link">Color Manipulation</a></li>
+                <li><a href="shades.html" class="nav-link">Shades & Tints</a></li>
+                <li><a href="harmony.html" class="nav-link">Color Harmonies</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="title">Random Color Generator</div>
+            <hr> 
+            <div class="colorgen">
+                <div class="column1">
+                    <div id="colorCard"></div>
+                    <label for="hex"> Color (hex) </label>
+                    <input type="text" id="hexInput" placeholder="#000000" maxlength="7"/>
+                    <p> -OR- </p>
+                    <button id="randomColorGenerator"> Generate Random Color</button>
+                    
+                </div>
+                
+                <div class="column2">
+                    <p style="text-align: center; text-decoration: underline;">Color Codes</p>
+                    <div class="codes">
+                        <p>HEX</p>
+                        <div id="colorCode"></div>
+                    </div>
+                    <div class="codes">
+                        <p>RGB</p>
+                        <div id="RGBcolorCode"></div>
+                    </div>
+                    <div class="codes">
+                        <p>HSL</p>
+                        <div id="HSLcolorCode"></div>
+                    </div> 
+                    
+                </div>
+              
+            </div>
+            <hr>
+            <div class="title"> Color Maniplulation</div> 
+            <div class="newcolorgen">
+                <div class="column3">
+                  
+                    <div class="manipulationOptions">
+                        <div class="lightenOption">
+                            <input type="radio" id="lighten" name="colorChanger" value="lighten" checked>
+                            <label for="lighten">Lighten</label>
+                        </div>
+                        <div class="darkenOption">
+                            <input type="radio" id="darken" name="colorChanger" value="darken">
+                            <label for="darken">Darken</label>
+                        </div>
+                    </div>
+                    <div id="alteredColorCard"></div>
+                    <div class="sliderInput">
+                        <label for="slider" id="sliderText">20%</label>
+                        <input type="range" min="0" max="100" value="20"
+                        class="slider" id="slider" name="slider">
+                    </input>
+                    </div>
+                 
+                </div>
+               
+                <div class="column4">
+                    <p style="text-align: center; text-decoration: underline;">New Color Codes: </p>
+                    <div class="alteredcodes">
+                        <p>HEX</p>
+                        <div id="alteredcolorCode"></div>
+                    </div>
+                    <div class="codes">
+                        <p>RGB</p>
+                        <div id="alteredRGBcolorCode"></div>
+                    </div>
+                    <div class="codes">
+                        <p>HSL</p>
+                        <div id="alteredHSLcolorCode"></div>
+                    </div> 
+                </div>
+    
+            </div>
+            
+
+        </div>
+                
+            
+        <script src="scripts/index.js"></script>
+        <script src="scripts/colors.js"></script>
+    </body>
+</html>
