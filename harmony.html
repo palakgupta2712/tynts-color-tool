@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+            Color Harmonies
+        </title>
+        <link rel="stylesheet" href="css/harmony.css">
+        <link
+        href="https://fonts.googleapis.com/css?family=Montserrat"
+        rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <span class=" material-icons navbar-toggle" id="navbar-toggle"> menu </span>
+            
+            <a href="index.html" class="logo"> Color Tools </a>
+            <ul class="main-nav" id="menu">
+                <li><a href="gradient.html" class="nav-link">Gradient</a></li>
+                <li><a href="colors.html" class="nav-link">Color Manipulation</a></li>
+                <li><a href="shades.html" class="nav-link">Shades & Tints</a></li>
+                <li><a href="harmony.html" class="nav-link">Color Harmonies</a></li>
+            </ul>
+        </nav>
+
+        <!-- Gradients -->
+        <div class="container">
+            <div class="title">Color Harmonies</div>
+            <hr>
+
+            <div class="colorgen">
+                <div class="column1">
+                    <div id="colorCard"></div>
+                    <label for="hex"> Color (hex) </label>
+                    <input type="text" id="hexInput" placeholder="#000000" maxlength="7"/>
+                    <p> -OR- </p>
+                    <button id="randomColorGenerator"> Generate Random Color</button>
+                </div>
+            </div> 
+        
+            <div id="complementColor">
+
+            </div>
+            <div class="text"> Split Complement Colors</div>
+            <div class="splitColors">
+                <div id="splitColor1"></div>
+                <div id="splitColor2"></div>
+              
+            </div>
+            <div class="text"> Analogous Colors</div>
+            <div class="analogousColors">
+                <div id="analogousColor1"></div>
+                <div id="analogousColor2"></div>
+                <div id="analogousColor3"></div>
+            </div>
+            <div class="text"> Triad Colors</div>
+            <div class="triadColors">
+                <div id="triadColor1"></div>
+                <div id="triadColor2"></div>
+            </div>
+            <div class="text"> Tetrad Colors</div>
+            <div class="tetradColors">
+                <div id="tetradColor1"></div>
+                <div id="tetradColor2"></div>
+            </div>
+           
+        </div>          
+       
+        <script src="scripts/harmony.js"></script>
+        <script src="scripts/index.js"></script>
+    </body>
+
+</html>
