@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Shades & Tints</title>
+        <link rel="stylesheet" href="css/shades.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
+        <!-- JavaScript -->
+        <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <p id="copy"></p>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <span class=" material-icons navbar-toggle" id="navbar-toggle"> menu </span>    
+            <a href="index.html" class="logo"> Color Tools </a>
+            <ul class="main-nav" id="menu">
+                <li><a href="gradient.html" class="nav-link">Gradient</a></li>
+                <li><a href="colors.html" class="nav-link">Color Manipulation</a></li>
+                <li><a href="shades.html" class="nav-link">Shades & Tints</a></li>
+                <li><a href="harmony.html" class="nav-link">Color Harmonies</a></li>
+            </ul>
+            <!-- <button id="darkMode">Dark Mode</button> -->
+        </nav>
+        <div class="container">
+            <div class="title">Shades and Tints</div>
+            <hr> 
+            
+                <div class="column1">
+                    <div id="colorCard"></div>
+                    <label for="hex"> Color (hex) </label>
+                    <input type="text" id="hexInput" placeholder="#000000" maxlength="7"/>
+                    <p> -OR- </p>
+                    <button id="randomColorGenerator"> Generate Random Color</button>
+                    <button id="generate"> Generate Shades and Tints</button>
+                    
+                </div>
+                <div class="column2" id="shadesCard">
+                    <div class="text">
+                        <div class="colorcodetext">0%</div>
+                        <div class="colorcodetext">10%</div>
+                        <div class="colorcodetext">20%</div>
+                        <div class="colorcodetext">30%</div>
+                        <div class="colorcodetext">40%</div>
+                        <div class="colorcodetext">50%</div>
+                        <div class="colorcodetext">60%</div>
+                        <div class="colorcodetext">70%</div>
+                        <div class="colorcodetext">80%</div>
+                        <div class="colorcodetext">90%</div>
+                        <div class="colorcodetext">100%</div>
+                    </div>
+                    <div class="shades">    
+                        <div class="shadeBox">0%</div>
+                        <div class="shadeBox">10%</div>
+                        <div class="shadeBox">20%</div>
+                        <div class="shadeBox">30%</div>
+                        <div class="shadeBox">40%</div>
+                        <div class="shadeBox">50%</div>
+                        <div class="shadeBox">60%</div>
+                        <div class="shadeBox">70%</div>
+                        <div class="shadeBox">80%</div>
+                        <div class="shadeBox">90%</div>
+                        <div class="shadeBox">100%</div>
+                    </div>
+                   
+                    <div class="tints">    
+                        <div class="tintBox">0%</div>
+                        <div class="tintBox">10%</div>
+                        <div class="tintBox">20%</div>
+                        <div class="tintBox">30%</div>
+                        <div class="tintBox">40%</div>
+                        <div class="tintBox">50%</div>
+                        <div class="tintBox">60%</div>
+                        <div class="tintBox">70%</div>
+                        <div class="tintBox">80%</div>
+                        <div class="tintBox">90%</div>
+                        <div class="tintBox">100%</div>
+                    </div>
+                </div>
+            
+            </div>
+           
+            
+               
+            
+        <script src="scripts/index.js"></script>
+        <script src="scripts/shades.js"></script>
+    </body>
+</html>
