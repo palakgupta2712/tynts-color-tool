@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./styles.css";
-import { useClick } from "../useClick";
+import { useClick } from "./useClick";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
