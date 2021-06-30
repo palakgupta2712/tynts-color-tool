@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import Harmony from "../pages/Harmony";
 import Manipulator from "../pages/Manipulator";
 import ShadesTints from "../pages/ShadesTints";
+import Swatches from "../pages/Swatches";
 
 function Routes() {
   return (
@@ -15,6 +16,7 @@ function Routes() {
         <Route exact path="/color-manipulator" component={Manipulator} />
         <Route exact path="/color-harmonies" component={Harmony} />
         <Route exact path="/shades-and-tints" component={ShadesTints} />
+        <Route exact path="/color-swatches" component={Swatches} />
       </Switch>
     </React.Fragment>
   );
