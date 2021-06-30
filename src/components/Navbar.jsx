@@ -3,14 +3,17 @@ import styled from "styled-components";
 import logo from "../rgb.png";
 import DropdownMenu from "./dropdownMenu/DropdownMenu";
 import { AiFillGithub } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <NavbarContainer>
-      <NavLogo>
-        <Logo src={logo} alt="logo" />
-        Tynts
-      </NavLogo>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <NavLogo>
+          <Logo src={logo} alt="logo" />
+          Tynts
+        </NavLogo>
+      </Link>
       <NavMenu>
         <Button>
           <AiFillGithub />

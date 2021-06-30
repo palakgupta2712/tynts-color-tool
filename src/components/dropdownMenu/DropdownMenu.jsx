@@ -14,7 +14,7 @@ export default function App() {
     <React.Fragment>
       <Menu>
         <MenuButton onClick={onClick}>
-          <span>User</span>
+          <span>Tools</span>
           <IoIosArrowDropdownCircle />
         </MenuButton>
         <nav
