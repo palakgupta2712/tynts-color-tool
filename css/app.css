@@ -13,7 +13,8 @@ body {
   padding: 40px;
 }
 .menu {
-  padding: 20px;
+  max-width: 780px;
+  margin: 0 auto;
 }
 .card {
   background-color: white;
@@ -23,11 +24,11 @@ body {
   grid-template-columns: 1fr 1fr;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  padding: 20px;
+  padding: 50px;
+  border-radius: 20px;
   box-shadow: 5px 10px 5px 0px rgba(230, 230, 230, 0.76);
-  margin: 50px;
+  margin: 40px;
 }
-
 a {
   text-decoration: none;
 }
