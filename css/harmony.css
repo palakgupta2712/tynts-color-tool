@@ -1,179 +1,105 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: whitesmoke;
-    color:rgb(0, 0, 0);
-}
-/* Navbar */
-.navbar{
-    font-size: 18px ;
-    background-color: whitesmoke;
- 
-    margin-bottom: 10px;
-}
-
-.main-nav {
-    list-style-type: none;
-    display: none;
-}
-.nav-link,
-.logo {
-    text-decoration: none;
-    color: #030303;
-  
-}
-
-.main-nav li{
-    text-align: center;
-    margin: 15px auto;
-}
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.navbar-toggle{
-   position: absolute;
-   cursor: pointer;
-   top: 10px;
-   right: 20px;
-}
-.nav-link:hover {
-    border-bottom: 2px solid #97da1d;
-}
-.active{
-    display: block;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
 }
 /* Gradient */
 
-.container{
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
+.container {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
 }
-.title{
-    margin: 20px;
-    text-align: center;
-    font-size: 24px;
+.title {
+  margin: 20px;
+  text-align: center;
+  font-size: 24px;
 }
-hr{
-    width: 55%;
-    margin: auto;
-    border: 1px solid #e5e5e5;
- }
- .column1{
-    padding: 20px;
-    display: grid;
-    justify-content: center;
-    font-size: 18px;
-    gap: 5px;
-    text-align: center;
+hr {
+  width: 55%;
+  margin: auto;
+  border: 1px solid #e5e5e5;
 }
-.splitColors,.analogousColors,.tetradColors,.triadColors{
-    display: flex;
-    flex-direction:row;
-   align-content: center;
-   justify-content: center ;
-    
+.column1 {
+  padding: 20px;
+  display: grid;
+  justify-content: center;
+  font-size: 18px;
+  gap: 5px;
+  text-align: center;
 }
-.text{
-    text-align: center;
-    margin: 10px;
+.splitColors,
+.analogousColors,
+.tetradColors,
+.triadColors {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
-#colorCard, #complementColor{
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    border-radius: 5px;
+.text {
+  text-align: center;
+  margin: 10px;
 }
-#splitColor1, #splitColor2
-,#triadColor1,#triadColor2,
-#tetradColor1,#tetradColor2,
-#analogousColor1,#analogousColor2,#analogousColor3{
-    height: 100px;
-    width: 100px;
-    border-radius: 5px;
-    margin: 10px;
-    cursor: pointer;
-    text-align: center;
-   
-    
+#colorCard,
+#complementColor {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 5px;
 }
-button{
-    padding: 10px;
-    background-color: #e5e5e5;
-    border: none;
-    border-radius: 5px;
+#splitColor1,
+#splitColor2,
+#triadColor1,
+#triadColor2,
+#tetradColor1,
+#tetradColor2,
+#analogousColor1,
+#analogousColor2,
+#analogousColor3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
 }
-input[type="text"]{
-    padding: 10px;
-    border-radius: 5px;
-  
+button {
+  padding: 10px;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 5px;
 }
-#copy{
-    position: -webkit-sticky;
-    position:sticky;
-    padding: 20px;
-    top: 0;
-    background-color: gray;
-    text-align: center;
-    font-size: 20px;
-    display: none;
-    z-index: 1;
-    color: white;
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+}
+#copy {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 20px;
+  top: 0;
+  background-color: gray;
+  text-align: center;
+  font-size: 20px;
+  display: none;
+  z-index: 1;
+  color: white;
 }
 @media screen and (min-width: 768px) {
-    .title{
-        font-size: 40px;
-        margin: 10px 5em;
-    }
-    
-    .container{
-       margin-left: 5%;
-       margin-right: 5%;
-    }
-   
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-    .main-nav{
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-       
-    }
-    .main-nav li {
-        margin: 0;
-    }
-    .nav-link {
-        margin-left: 50px;
-    }
-    .logo {
-        margin-top: 0;
-    }
-   #navbar-toggle {
-       display: none;
-    }
-    .logo:hover,
-    .nav-link:hover {
-        color: #030303;
-       
-    }
+  .title {
+    font-size: 40px;
+    margin: 10px 5em;
+  }
 
-    /* gradient section */
-   
-   
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  /* gradient section */
 }
-

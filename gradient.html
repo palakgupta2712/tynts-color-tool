@@ -1,76 +1,96 @@
 <html>
-    <head>
-        <title>
-            Color Gradients
-        </title>
-        <link rel="stylesheet" href="css/gradient.css">
-        <link
-            href="https://fonts.googleapis.com/css?family=Montserrat"
-            rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Color Gradients</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gradient.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <span class="material-icons navbar-toggle" id="navbar-toggle">
+        menu
+      </span>
 
-    </head>
-    <body>
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <span class=" material-icons navbar-toggle" id="navbar-toggle"> menu </span>
-            
-            <a href="index.html" class="logo"> Tynts </a>
-            <ul class="main-nav" id="menu">
-                <li><a href="gradient.html" class="nav-link">Gradient</a></li>
-                <li><a href="colors.html" class="nav-link">Color Manipulation</a></li>
-                <li><a href="shades.html" class="nav-link">Shades & Tints</a></li>
-                <li><a href="harmony.html" class="nav-link">Color Harmonies</a></li>
-            </ul>
-        </nav>
+      <a href="index.html" class="logo"> Tynts </a>
+      <ul class="main-nav" id="menu">
+        <li><a href="gradient.html" class="nav-link">Gradient</a></li>
+        <li><a href="colors.html" class="nav-link">Color Manipulation</a></li>
+        <li><a href="shades.html" class="nav-link">Shades & Tints</a></li>
+        <li><a href="harmony.html" class="nav-link">Color Harmonies</a></li>
+      </ul>
+    </nav>
 
-        <!-- Gradients -->
-        <div class="container">
-            <div class="title">Color Gradient</div>
-            <hr>
-                   
-            <div class="column1">
-                <div class="primary">
-                    <label for="hexInputPrimary"> Primary Color</label>
-                    <input type="text" id="hexInputPrimary" placeholder="#000000" maxlength="7">
-                    <button id="primaryButton"> Random</button>
-                    <div id="primaryColorCard"></div>
-                </div>
+    <!-- Gradients -->
+    <div class="container">
+      <div class="title">Color Gradient</div>
+      <hr />
 
-                <div class="secondary">
-                    <label for="hexInputSecondary"> Secondary Color</label>
-                    <input type="text" id="hexInputSecondary"  placeholder="#000000" maxlength="7">
-                    <button id="secondaryButton"> Random</button>
-                    <div id="secondaryColorCard"></div>
-                </div>
-            </div>
-            <hr>
-            <div class="column2">
-                <div class="gradientOptions">
-                    <label>Gradient type: </label>
-                    <div class="linearradio">
-                        <input type="radio" id="linear" name="gradient" value="linear" checked>
-                        <label for="linear">Linear</label>
-                    </div>                  
-                    <div class="radialradio">
-                        <input type="radio" id="radial" name="gradient" value="radial">
-                        <label for="radial">Radial</label>
-                    </div>
-                </div>
-            </div>
-            <div id="gradientColorCard"></div>
-            <div class="cssSection">
-                <div id="cssCode">CSS Code : </div>
-                <div id="code"></div>
-            </div>           
+      <div class="column1">
+        <div class="primary">
+          <label for="hexInputPrimary"> Primary Color</label>
+          <input
+            type="text"
+            id="hexInputPrimary"
+            placeholder="#000000"
+            maxlength="7"
+          />
+          <button id="primaryButton">Random</button>
+          <div id="primaryColorCard"></div>
         </div>
-        <script src="scripts/gradient.js"></script>
-        <script src="scripts/index.js"></script>
-    </body>
 
+        <div class="secondary">
+          <label for="hexInputSecondary"> Secondary Color</label>
+          <input
+            type="text"
+            id="hexInputSecondary"
+            placeholder="#000000"
+            maxlength="7"
+          />
+          <button id="secondaryButton">Random</button>
+          <div id="secondaryColorCard"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="column2">
+        <div class="gradientOptions">
+          <label>Gradient type: </label>
+          <div class="linearradio">
+            <input
+              type="radio"
+              id="linear"
+              name="gradient"
+              value="linear"
+              checked
+            />
+            <label for="linear">Linear</label>
+          </div>
+          <div class="radialradio">
+            <input type="radio" id="radial" name="gradient" value="radial" />
+            <label for="radial">Radial</label>
+          </div>
+        </div>
+      </div>
+      <div id="gradientColorCard"></div>
+      <div class="cssSection">
+        <div id="cssCode">CSS Code :</div>
+        <div id="code"></div>
+      </div>
+    </div>
+    <script src="scripts/gradient.js"></script>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>

@@ -1,197 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: whitesmoke;
-    color:rgb(0, 0, 0);
-}
-/* Navbar */
-.navbar{
-    font-size: 18px ;
-    background-color: whitesmoke;
- 
-    margin-bottom: 10px;
-}
-
-.main-nav {
-    list-style-type: none;
-    display: none;
-}
-.nav-link,
-.logo {
-    text-decoration: none;
-    color: #030303;
-  
-}
-
-.main-nav li{
-    text-align: center;
-    margin: 15px auto;
-}
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.navbar-toggle{
-   position: absolute;
-   cursor: pointer;
-   top: 10px;
-   right: 20px;
-}
-.nav-link:hover {
-    border-bottom: 2px solid #97da1d;
-}
-.active{
-    display: block;
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
 }
 /* Gradient */
 
-.container{
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
+.container {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
 }
-.title{
-    margin: 20px;
-    text-align: center;
-    font-size: 24px;
+.title {
+  margin: 20px;
+  text-align: center;
+  font-size: 24px;
 }
-hr{
-    width: 55%;
-    margin: auto;
-    border: 1px solid #e5e5e5;
- }
-.column1,.column2{
-    padding: 10px;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
+hr {
+  width: 55%;
+  margin: auto;
+  border: 1px solid #e5e5e5;
 }
-
-.primary, .secondary{
-    display: grid;
-    grid-template-columns: "1fr 1fr 1fr" ;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-  
-}
-button{
-    padding: 10px;
-}
-input[type="text"]{
-    padding: 10px;
-}
-#primaryColorCard, #secondaryColorCard{
-    height: 70px;
-    width: 70px;
-    margin: auto;
-    align-content: center;
-    border-radius: 5px;
+.column1,
+.column2 {
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
 }
 
-#gradientColorCard{
-    padding: 10px;
-    margin: 10px;
-    height: 200px;
-    width: auto;
-    border-radius: 10px;
+.primary,
+.secondary {
+  display: grid;
+  grid-template-columns: "1fr 1fr 1fr";
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+button {
+  padding: 10px;
+}
+input[type="text"] {
+  padding: 10px;
+}
+#primaryColorCard,
+#secondaryColorCard {
+  height: 70px;
+  width: 70px;
+  margin: auto;
+  align-content: center;
+  border-radius: 5px;
 }
 
-#cssCode{
-    margin: 20px;
+#gradientColorCard {
+  padding: 10px;
+  margin: 10px;
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
 }
 
-#code{
-    font-family: 'Roboto Mono', monospace;
-    background-color: whitesmoke;
-    padding: 20px;
-    margin: 10px;
+#cssCode {
+  margin: 20px;
 }
 
-
-.gradientOptions{
-    font-size: 18px;
+#code {
+  font-family: "Roboto Mono", monospace;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 10px;
 }
 
-hr{
-   width: 55%;
-   margin: auto;
-   border: 1px solid #e5e5e5;
+.gradientOptions {
+  font-size: 18px;
+}
+
+hr {
+  width: 55%;
+  margin: auto;
+  border: 1px solid #e5e5e5;
 }
 @media screen and (min-width: 768px) {
-    .title{
-        font-size: 40px;
-        margin: 10px 5em;
-    }
-    
-    .primary, .secondary{
-        
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-bottom: 10px;
-    }
-  
-    #gradientColorCard{
-        margin: auto;
-        width: 55%;   
-    }
-    .container{
-       margin-left: 5%;
-       margin-right: 5%;
-    }
-    .gradientOptions{
-        font-size: 20px;
-        display: flex;
-        gap: 20px;
-        padding: 20px;
-    }
-    .cssSection{
-        background-color: #e5e5e5;
-        border: 1px solid #e5e5e5;
-        margin: 2em 5em;
-    }
-    .navbar{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-    .main-nav{
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-       
-    }
-    .main-nav li {
-        margin: 0;
-    }
-    .nav-link {
-        margin-left: 50px;
-    }
-    .logo {
-        margin-top: 0;
-    }
-   #navbar-toggle {
-       display: none;
-    }
-    .logo:hover,
-    .nav-link:hover {
-        color: #030303;
-       
-    }
+  .title {
+    font-size: 40px;
+    margin: 10px 5em;
+  }
 
-    /* gradient section */
-   
-   
+  .primary,
+  .secondary {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 10px;
+  }
+
+  #gradientColorCard {
+    margin: auto;
+    width: 55%;
+  }
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .gradientOptions {
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  .cssSection {
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    margin: 2em 5em;
+  }
+  /* gradient section */
 }
-
