@@ -9,7 +9,7 @@ navbar_toggle.addEventListener("click", () => {
 //method to copy the text from the DOM
 const CopyToClipboard = (id) => {
   navigator.clipboard.writeText(id);
-  alert(`Copied : ${alteredRGBcolorCode.innerText}`);
+  alert(`Copied : ${id.innerText}`);
 };
 
 //Checking for valid hex value
